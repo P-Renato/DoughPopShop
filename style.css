@@ -1,14 +1,30 @@
+:root {
+    --fredocaFontStyle: "Fredoka", sans-serif;
+    --modakFontStyle: "Modak", system-ui;
+    --pinkColor: #D57178;
+    --beigeColor: #F5E6D0;
+    --lightGreenColor: #B5BAA4;
+    --goldenYellowColor: #F1C173;
+    --darkColor1: #532610;
+    --darkColor2: #55301E;
+    --veryLightGreenColor: #DBE8E3;
+}
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 header {
-    height: 4rem;
-    /* z-index: 3; */
+    height: 6rem;
     position: relative;
     width: 100%;
-    /* overflow: hidden; */
+    display: flex;
+    justify-content: center; 
+    padding: 0 12rem; 
+    align-items: flex-start;
+
 }
 svg{
     color: white;
@@ -18,32 +34,37 @@ svg{
     left: 0;
     width: 100%;
     height: 100%;
-    top: 2.7rem; 
+    top: 4.7rem; 
     z-index: 3;
         
 }
-main{
-    height: 50vw;
-    background-color: #F5E6D0;
-    /* border: 2px solid red; */
-    position: relative;
-    z-index: 0;
-}
-.doughPopLogo{
-    height: 100%;
-    position: relative; 
-    z-index: 1000;
-    bottom: 2.6rem;
 
-}
+.doughPopLogo {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%); 
+    z-index: 1000;
+    height: 100%; /* Adjust as needed */
+    align-items: flex-start;
+    border: 2px solid red;
+  }
+
+  .navBarOptions{
+    border: 2px solid green;
+    width: 80%;
+    height: 100%;
+    margin-top: 1.2rem;
+    position: relative;
+  }
 .menuAbout,
 .locationContact{
-    font-family: "Fredoka", sans-serif;
+    font-family: var(--fredocaFontStyle);
     display: flex;
     display: inline;
     flex-direction: row;
-    font-size: .4rem;
-
+    font-size: .8rem;
+    border: 2px solid black;
     
 }
 .menuAbout{
@@ -72,4 +93,11 @@ main{
 
 
     }
+}
+main{
+    height: 50vw;
+    background-color: var(--beigeColor);
+    position: relative;
+    z-index: 0;
+    width: 100%;
 }
