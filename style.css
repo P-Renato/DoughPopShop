@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    height: 4rem;
+    /* z-index: 3; */
+    position: relative;
+    width: 100%;
+    /* overflow: hidden; */
+}
+svg{
+    color: white;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: 2.7rem; 
+    z-index: 3;
+        
+}
+main{
+    height: 50vw;
+    background-color: #F5E6D0;
+    /* border: 2px solid red; */
+    position: relative;
+    z-index: 0;
+}
+.doughPopLogo{
+    height: 100%;
+    position: relative; 
+    z-index: 1000;
+    bottom: 2.6rem;
+
+}
+.menuAbout,
+.locationContact{
+    font-family: "Fredoka", sans-serif;
+    display: flex;
+    display: inline;
+    flex-direction: row;
+    font-size: .4rem;
+
+    
+}
+.menuAbout{
+    
+    float: left;
+    margin-top: 2rem;
+    margin-left: 6rem;
+
+    a{
+        margin: .4rem;
+        text-decoration: none;
+        color: #444444;
+    }
+}
+
+
+.locationContact{
+    float: right;
+    margin-top: 2rem;
+    margin-right: 6rem;
+
+    a{
+        margin: .4rem;
+        text-decoration: none;
+        color: #444444;
+
+
+    }
+}
