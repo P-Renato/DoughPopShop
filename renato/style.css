@@ -42,20 +42,21 @@ svg{
 .doughPopLogo {
     position: absolute;
     left: 50%;
+    top: -1.5rem;
     width: 100%;
     transform: translate(-50%, -50%); 
     z-index: 1000;
     height: 100%; /* Adjust as needed */
     align-items: flex-start;
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
 
   .navBarOptions{
     border: 2px solid green;
     width: 80%;
-    height: 100%;
+    justify-content: space-around;
     margin-top: 1.2rem;
-    position: relative;
+    position: fixed;
   }
 .menuAbout,
 .locationContact{
@@ -64,7 +65,7 @@ svg{
     display: inline;
     flex-direction: row;
     font-size: .8rem;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     
 }
 .menuAbout{
