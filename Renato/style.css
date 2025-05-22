@@ -23,7 +23,7 @@ header {
     display: flex;
     justify-content: center; 
     padding: 0 12rem; 
-    align-items: flex-start;
+    align-items: center;
 
 }
 svg{
@@ -40,20 +40,24 @@ svg{
 }
 
 .doughPopLogo {
-    position: absolute;
-    left: 50%;
-    top: -1.5rem;
+
     width: 100%;
-    transform: translate(-50%, -50%); 
     z-index: 1000;
-    height: 100%; /* Adjust as needed */
-    align-items: flex-start;
-    /* border: 2px solid red; */
+    justify-content: center;
+
+    border: 2px solid red;
+
+    img{
+        border: 2px solid red;
+        width: 10rem;
+        justify-content: center;
+
+    }
   }
 
   .navBarOptions{
-    border: 2px solid green;
-    width: 80%;
+    border: 12px solid green;
+    width: 100%;
     justify-content: space-around;
     margin-top: 1.2rem;
     position: fixed;
@@ -62,10 +66,10 @@ svg{
 .locationContact{
     font-family: var(--fredocaFontStyle);
     display: flex;
-    display: inline;
+    /* display: inline; */
     flex-direction: row;
     font-size: .8rem;
-    /* border: 2px solid black; */
+    border: 2px solid black;
     
 }
 .menuAbout{
@@ -101,4 +105,54 @@ main{
     position: relative;
     z-index: 0;
     width: 100%;
+    height: 100%;
+}
+
+.bgtext{
+    width: 100vw;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+    border: 2px solid black;
+}
+.donutInBag{
+    position: relative;
+    z-index: 2;
+}
+p{
+    font-family: var(--modakFontStyle);
+    width: 100vw;
+    font-size: 4.7rem;
+    opacity: .25;
+    line-height: 100%;
+    font-weight: 400;
+    text-align: center;
+}
+
+.popBgText1 {
+    color: var(--pinkColor);
+}
+
+.popBgText2{
+    color: var(--lightGreenColor);
+}
+
+.popBgText3{
+    color: var(--goldenYellowColor);   
+}
+
+.popBgText4{
+    color: var(--darkColor2);
+}
+
+.popBgText5{
+    color: var(--goldenYellowColor);
+}
+
+.popBgText6{
+    color: var(--lightGreenColor);
+}
+
+.popBgText7{
+    color: var(--pinkColor);
 }
