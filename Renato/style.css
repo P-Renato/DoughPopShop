@@ -185,3 +185,55 @@ p{
 .popBgText7{
     color: var(--pinkColor);
 }
+
+
+
+
+/* Parent container */
+.donutAndBag {
+    position: relative;
+    height: 28rem;
+    display: flex;
+    justify-self: center;
+    border: 1px solid yellowgreen;
+    width: 100%;
+  }
+
+  /* Bag (bottom) */
+  .bagForDonutUnder img {
+    width: 24rem;
+    height: 18rem;
+  }
+  .bagForDonutUnder {
+    position: absolute;
+    bottom: 0;
+    left: 31.5%;
+    margin: 0 auto;
+    transform: translateY(12%);
+    z-index: 6;
+  }
+
+  .donutInBag img {
+    width: 23.5rem;
+  }
+  .donutInBag {
+    position: absolute;
+    bottom: 1.2rem; /* Adjust to raise/lower */
+    left: 50%;
+    transform: translateX(-47%);
+    z-index: 8;
+  }
+
+  /* Bag handle (top) */
+  .bagForDonutTop {
+    position: absolute;
+    bottom: 0;
+    left: 32%;
+    transform: translateY(23%);
+    z-index: 10;
+  }
+
+  .bagForDonutTop img {
+    width: 24rem;
+    height: 18rem;
+  }
