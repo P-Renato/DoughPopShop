@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "firstName": "Mary",
+        "lastName": "House",
+        "email": "mary@abc.com",
+        "phone": "875-849-214",
+        "message": "nice donuts"
+    },
+    {
+        "id": 2,
+        "firstName": "Lila",
+        "lastName": "Brown",
+        "email": "lina@abc.com",
+        "phone": "325-879-254",
+        "message": "music is so amazing"
+    },
+    {
+        "id": 3,
+        "firstName": "Tom",
+        "lastName": "Gates",
+        "email": "toma@abc.com",
+        "phone": "825-839-554",
+        "message": "so sweet"
+    },
+    {
+        "id": 4,
+        "firstName": "David",
+        "lastName": "Black",
+        "email": "abc@faf.de",
+        "phone": "1597-648",
+        "message": "niceeee"
+    },
+    {
+        "id": 5,
+        "firstName": "Tim",
+        "lastName": "Red",
+        "email": "daidy@keller.com",
+        "phone": "587744-645",
+        "message": "niceeee"
+    }
+]
