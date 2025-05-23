@@ -127,7 +127,7 @@
      
     }
 
-    .card {
+    .Card {
       padding: 20px;
       display: flex;
       align-items: center;
@@ -135,7 +135,7 @@
       min-height: 200px;
     }
 
-    .card img {
+    .cardM img {
       width: 100px;
       margin-right: 20px;
     }
