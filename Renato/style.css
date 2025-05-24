@@ -33,29 +33,29 @@ header {
 }
 
 .doughPopLogo {
-    width: 80%;
+    width: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     margin-bottom: .8rem;
     grid-area: popLogo;
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    padding: 0;
 
     img{
         /* border: 2px solid red; */
-        width: 17rem;
-
+        width: 20rem;
+        margin: 0;
 
     }
   }
 
-  .navBarOptions{
-    border: 12px solid green;
+  .navBarOptions{ 
     width: 100%;
     justify-content: space-around;
     display: grid;
-    grid-template-columns: .5fr .5fr 1fr .5fr .5fr;
+    grid-template-columns: 1.3fr .5fr .5fr .5fr 1.3fr;
     grid-template-areas: '. menuAbout popLogo locationContact .';
   }
 .menuAbout,
@@ -65,7 +65,7 @@ header {
     flex-direction: row;
     align-items: end;
     font-size: 1rem;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin-bottom: 1.5rem;
     
 }
@@ -100,23 +100,56 @@ main{
     overflow: visible;
 }
 
-
+.svg-container{
+    width: 120%;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
 .bgtext{
     width: 100vw;
     height: 100%;
     position: absolute;
     z-index: 0;
     border: 2px solid black;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    p{
+        /* border: 1px solid orangered; */
+        margin: 0;
+        top: 0;
+        font-size: 7rem;
+    }
 }
+
+.popBgText1, 
+.popBgText2, 
+.popBgText3, 
+.popBgText4, 
+.popBgText5, 
+.popBgText6, 
+.popBgText7 {
+    /* Remove default <p> margins */
+    margin: 0;
+    padding: 0;
+    /* Ensure they stick directly underneath */
+    display: block;
+    /* Optional: Add a small gap if needed (e.g., 2px) */
+    /* margin-top: 2px; */
+}
+
 .layoutOverAll{
     
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.donutAndBag{
-    border: 1px solid greenyellow;
-}
+
 
 .donutInBag{
     position: relative;
@@ -183,10 +216,10 @@ p{
 /* Parent container */
 .donutAndBag {
     position: relative;
-    height: 28rem;
+    height: 38rem;
     display: flex;
     justify-self: center;
-    border: 1px solid yellowgreen;
+    /* border: 1px solid yellowgreen; */
     width: 100%;
   }
 
