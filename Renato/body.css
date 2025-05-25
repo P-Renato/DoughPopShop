@@ -76,7 +76,7 @@
     width: 100vw;
     font-size: 4.7rem;
     opacity: .25;
-    line-height: 100%;
+    line-height: 80%;
     text-align: center;
     white-space: nowrap;
     transform-origin: center center;
@@ -118,21 +118,24 @@
 
 .layoutOverAll{
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: .5fr 5fr 1fr;
     grid-template-rows: .3fr 1fr 1fr .5fr ;
-    /* justify-content: space-around;
-    align-items: center; */
 }
 
 /* Parent container */
 .sideInfo{
     grid-row: 2 / 4;
     grid-column: 1 / 2;
-    border: 2px solid rebeccapurple;
-    display: grid;
-    grid-template-rows: .7fr .3fr 1fr ;
+    display: flex;
     width: 25rem;
-    margin: 1rem;
+    margin-left: 4rem;
+    padding: 1rem;
+    height: 100%;
+    background-color: white;
+    z-index: 3;
+    position: relative;
+    border-radius: 32px;
+    top: 6rem;
 }
 
 .sideInfo span{
@@ -144,8 +147,11 @@
     grid-row: 2 / 4;
 }
 
-.sideBarHeader{
+.sideBarHeader,
+.sideBarPrice{
     font-family: var(--modakFontStyle);
+    color: var(--pinkColor);
+    font-weight: normal;
 }
 
 /* Parent container */
@@ -155,10 +161,15 @@
     grid-row: 2 / 4;
     grid-column: 3 / 4;
     width: 100%;
+    z-index: 1;
+    position: relative;
+    right: 13rem;
+    top: 9rem;
+    
 
     img{
-        width: 12rem;
-        height: 22rem;
+        width: 18rem;
+        height: 30rem;
     }
 }
 
@@ -170,32 +181,33 @@
     position: relative;
     height: 38rem;
     border: 1px solid yellowgreen;
-    width: 80%;
+    width: 60%;
+    
   }
 
   /* Bag (bottom) */
   .bagForDonutUnder img {
-    width: 24rem;
-    height: 18rem;
+    width: 30rem;
+    height: 28rem;
   }
   .bagForDonutUnder {
     position: absolute;
     bottom: 0;
-    left: 31.5%;
+    left: 33%;
     margin: 0 auto;
-    transform: translateY(12%);
+    transform: translateY(64%);
     z-index: 6;
   }
 
   /* Donut in middle */
   .donutInBag img {
-    width: 23.5rem;
+    width: 29rem;
   }
   .donutInBag {
     position: absolute;
-    bottom: 1.2rem; /* Adjust to raise/lower */
+    bottom: -7rem; /* Adjust to raise/lower */
     left: 50%;
-    transform: translateX(-47%);
+    transform: translateX(-14%);
     z-index: 8;
   }
 
@@ -204,13 +216,13 @@
     position: absolute;
     bottom: 0;
     left: 32%;
-    transform: translateY(23%);
+    transform: translateY(73%);
     z-index: 10;
   }
 
   .bagForDonutTop img {
-    width: 24rem;
-    height: 18rem;
+    width: 34rem;
+    height: 26rem;
   }
 
 
