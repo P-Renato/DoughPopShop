@@ -55,7 +55,7 @@
     height: 100%;
     position: absolute;
     z-index: 0;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding: 0;
     margin: 0;
     display: flex;
@@ -157,7 +157,7 @@
 /* Parent container */
 
 .donutFlavour{
-    border: 2px solid salmon;
+    /* border: 2px solid salmon; */
     grid-row: 2 / 4;
     grid-column: 3 / 4;
     width: 100%;
@@ -180,7 +180,7 @@
     grid-column: 2 / 3;
     position: relative;
     height: 38rem;
-    border: 1px solid yellowgreen;
+    /* border: 1px solid yellowgreen; */
     width: 60%;
     
   }
