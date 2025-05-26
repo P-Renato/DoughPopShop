@@ -1,0 +1,228 @@
+:root {
+    --fredocaFontStyle: "Fredoka", sans-serif;
+    --modakFontStyle: "Modak", system-ui;
+    --pinkColor: #D57178;
+    --beigeColor: #F5E6D0;
+    --lightGreenColor: #B5BAA4;
+    --goldenYellowColor: #F1C173;
+    --darkColor1: #532610;
+    --darkColor2: #55301E;
+    --veryLightGreenColor: #DBE8E3;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* HEADER  */
+.mainBody{
+    background-color: var(--beigeColor);
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    min-height: 100vh;
+    overflow: visible;
+}
+
+.meltingSauce{
+    color: white;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;  
+}
+
+
+
+/* BACKGROUND */
+.svg-container{
+    width: 120%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    z-index: 3;
+}
+
+
+
+.bgtext{
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    /* border: 2px solid black; */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bgtext p{
+    margin: 0;
+    top: 0;
+    font-size: 7rem;
+}
+
+
+
+.popBgText{
+    font-family: var(--modakFontStyle);
+    width: 100vw;
+    font-size: 4.7rem;
+    opacity: .25;
+    line-height: 80%;
+    text-align: center;
+    white-space: nowrap;
+    transform-origin: center center;
+    margin: 0;
+    transform: translateY(-82%);
+    z-index: 0;
+
+}
+
+.popBgText1 {
+    color: var(--pinkColor);
+}
+
+.popBgText2{
+    color: var(--lightGreenColor);
+}
+
+.popBgText3{
+    color: var(--goldenYellowColor);   
+}
+
+.popBgText4{
+    color: var(--darkColor2);
+}
+
+.popBgText5{
+    color: var(--goldenYellowColor);
+}
+
+.popBgText6{
+    color: var(--lightGreenColor);
+}
+
+.popBgText7{
+    color: var(--pinkColor);
+}
+
+/* OVERGROUND */
+
+.layoutOverAll{
+    display: grid;
+    grid-template-columns: .5fr 5fr 1fr;
+    grid-template-rows: .3fr 1fr 1fr .5fr ;
+}
+
+/* Parent container */
+.sideInfo{
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+    display: flex;
+    width: 25rem;
+    margin-left: 4rem;
+    padding: 1rem;
+    height: 100%;
+    background-color: white;
+    z-index: 3;
+    position: relative;
+    border-radius: 32px;
+    top: 6rem;
+}
+
+.sideInfo span{
+    display: block;
+    font-family: var(--fredocaFontStyle);
+}
+
+.sideBarText{
+    grid-row: 2 / 4;
+}
+
+.sideBarHeader,
+.sideBarPrice{
+    font-family: var(--modakFontStyle);
+    color: var(--pinkColor);
+    font-weight: normal;
+}
+
+/* Parent container */
+
+.donutFlavour{
+    /* border: 2px solid salmon; */
+    grid-row: 2 / 4;
+    grid-column: 3 / 4;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    right: 13rem;
+    top: 9rem;
+    
+
+    img{
+        width: 18rem;
+        height: 30rem;
+    }
+}
+
+
+/* Parent container */
+.donutAndBag {
+    grid-row: 1 / 4;
+    grid-column: 2 / 3;
+    position: relative;
+    height: 38rem;
+    /* border: 1px solid yellowgreen; */
+    width: 60%;
+    
+  }
+
+  /* Bag (bottom) */
+  .bagForDonutUnder img {
+    width: 30rem;
+    height: 28rem;
+  }
+  .bagForDonutUnder {
+    position: absolute;
+    bottom: 0;
+    left: 33%;
+    margin: 0 auto;
+    transform: translateY(64%);
+    z-index: 6;
+  }
+
+  /* Donut in middle */
+  .donutInBag img {
+    width: 29rem;
+  }
+  .donutInBag {
+    position: absolute;
+    bottom: -7rem; /* Adjust to raise/lower */
+    left: 50%;
+    transform: translateX(-14%);
+    z-index: 8;
+  }
+
+  /* Bag handle (top) */
+  .bagForDonutTop {
+    position: absolute;
+    bottom: 0;
+    left: 32%;
+    transform: translateY(73%);
+    z-index: 10;
+  }
+
+  .bagForDonutTop img {
+    width: 34rem;
+    height: 26rem;
+  }
+
+
