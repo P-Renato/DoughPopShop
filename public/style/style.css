@@ -17,40 +17,35 @@
     box-sizing: border-box;
 }
 header {
-    height: 6rem;
-    position: relative;
+    height: 8rem;
     width: 100%;
     display: flex;
     justify-content: center; 
-    padding: 0 12rem; 
     align-items: center;
 
 }
-svg{
+.meltingSauce{
     color: white;
     margin: 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    top: 4.7rem; 
-    z-index: 3;
-        
+    z-index: 3;  
 }
 
 .doughPopLogo {
-
-    width: 100%;
-    z-index: 1000;
+    width: 80%;
+    display: flex;
     justify-content: center;
-
+    align-items: center;
+    height: 100%;
+    margin-bottom: .8rem;
+    grid-area: popLogo;
     border: 2px solid red;
 
     img{
-        border: 2px solid red;
-        width: 10rem;
-        justify-content: center;
+        /* border: 2px solid red; */
+        width: 17rem;
+
 
     }
   }
@@ -59,25 +54,25 @@ svg{
     border: 12px solid green;
     width: 100%;
     justify-content: space-around;
-    margin-top: 1.2rem;
-    position: fixed;
+    display: grid;
+    grid-template-columns: .5fr .5fr 1fr .5fr .5fr;
+    grid-template-areas: '. menuAbout popLogo locationContact .';
   }
 .menuAbout,
 .locationContact{
     font-family: var(--fredocaFontStyle);
     display: flex;
-    /* display: inline; */
     flex-direction: row;
-    font-size: .8rem;
+    align-items: end;
+    font-size: 1rem;
     border: 2px solid black;
+    margin-bottom: 1.5rem;
     
 }
 .menuAbout{
-    
-    float: left;
-    margin-top: 2rem;
-    margin-left: 6rem;
-
+    grid-area: menuAbout;
+    float: right;
+ 
     a{
         margin: .4rem;
         text-decoration: none;
@@ -87,16 +82,12 @@ svg{
 
 
 .locationContact{
-    float: right;
-    margin-top: 2rem;
-    margin-right: 6rem;
-
+    grid-area: locationContact;
+    float: left;
     a{
         margin: .4rem;
         text-decoration: none;
         color: #444444;
-
-
     }
 }
 main{
@@ -105,19 +96,46 @@ main{
     position: relative;
     z-index: 0;
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
+    overflow: visible;
 }
+
 
 .bgtext{
     width: 100vw;
     height: 100%;
-    position: relative;
+    position: absolute;
     z-index: 0;
     border: 2px solid black;
 }
+.layoutOverAll{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.donutAndBag{
+    border: 1px solid greenyellow;
+}
+
 .donutInBag{
     position: relative;
     z-index: 2;
+
+    img{
+        width: 16rem;
+    }
+}
+
+.bagForDonutTop,
+.bagForDonutUnder {
+    position: relative;
+    z-index: 100;
+    img {
+        width: 17rem;
+        height: 15rem;
+    }
+
 }
 p{
     font-family: var(--modakFontStyle);
@@ -125,8 +143,10 @@ p{
     font-size: 4.7rem;
     opacity: .25;
     line-height: 100%;
-    font-weight: 400;
     text-align: center;
+    white-space: nowrap;
+    transform-origin: center center;
+    margin: 0;
 }
 
 .popBgText1 {
@@ -156,3 +176,56 @@ p{
 .popBgText7{
     color: var(--pinkColor);
 }
+
+
+
+
+/* Parent container */
+.donutAndBag {
+    position: relative;
+    height: 28rem;
+    display: flex;
+    justify-self: center;
+    border: 1px solid yellowgreen;
+    width: 100%;
+  }
+
+  /* Bag (bottom) */
+  .bagForDonutUnder img {
+    width: 24rem;
+    height: 18rem;
+  }
+  .bagForDonutUnder {
+    position: absolute;
+    bottom: 0;
+    left: 31.5%;
+    margin: 0 auto;
+    transform: translateY(12%);
+    z-index: 6;
+  }
+
+  .donutInBag img {
+    width: 23.5rem;
+  }
+  .donutInBag {
+    position: absolute;
+    bottom: 1.2rem; /* Adjust to raise/lower */
+    left: 50%;
+    transform: translateX(-47%);
+    z-index: 8;
+  }
+
+  /* Bag handle (top) */
+  .bagForDonutTop {
+    position: absolute;
+    bottom: 0;
+    left: 32%;
+    transform: translateY(23%);
+    z-index: 10;
+  }
+
+  .bagForDonutTop img {
+    width: 24rem;
+    height: 18rem;
+  }
+

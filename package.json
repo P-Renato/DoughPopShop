@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/P-Renato/DoughPopShop#readme",
   "dependencies": {
+    "@sendgrid/mail": "^8.1.5",
     "@types/express": "^5.0.2",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "nodemailer": "^7.0.3"
   }
 }
