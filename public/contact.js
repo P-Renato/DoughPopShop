@@ -4,7 +4,8 @@ const email = document.querySelector("#email");
 const phone = document.querySelector("#phone-number");
 const message = document.querySelector("#message");
 const send = document.querySelector(".send");
-
+const afterContact = document.querySelector(".after-contact");
+const contactForm = document.querySelector("#contact-form");
 
 // function sending data
 async function sendData() {
@@ -25,7 +26,11 @@ async function sendData() {
   try {
     const response = await fetch(url, options);
     const data = await response.json();
-    window.location.href = "http://localhost:5000/aftercontact.html";
+    const port = window.location.port;
+    window.location.href = `http://127.0.0.1:${port}/DoughPopShop/public/aftercontact.html`;
+    //afterContact.style.display = "block";
+    //contactForm.style.display = "none"
+
   } catch (err) {
     console.error("Error submitting data:", err);
   }
