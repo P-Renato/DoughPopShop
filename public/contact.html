@@ -49,22 +49,24 @@
             <a href=""><img class="social-icon" src="images/telegram.png" alt=""></a>
         </div>
 
-        <form class="contact-form">
+        <form class="contact-form" id="myForm">
             <label class="fname" for="">First Name</label>
             <input type="text" class="remove-border" id="first-name">
             <label class="flast" for="">Last Name</label>
             <input type="text" class="remove-border" id="last-name">
             <label class="femail" for="">Email</label>
-            <input type="text" class="remove-border" id="email">
+            <input type="email" name="email" class="remove-border" id="email">
             <label class="fphone" for="">Phone Number</label>
             <input type="text" class="remove-border" id="phone-number">
             <label class="fmessage" for="">Message</label>
             <input type="text" class="remove-border" id="message" placeholder="Write your message">
-
+            <input type="hidden" name="_next" value="http://localhost:5000/aftercontact.html">
+            <input type="hidden" name="_subject" value="A new message from customer of DOUGHPOPSHOP!">
+            <button class="send btn">Send</button>
         </form>
-        <button class="send btn">Send</button>
+        
     </section>
-    
+
     <script type="module" src="contact.js"></script>
 </body>
 

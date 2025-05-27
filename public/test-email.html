@@ -1,0 +1,63 @@
+<form id="myForm">
+  <label class="fname" for="">First Name</label>
+  <input type="text" class="remove-border" id="first-name">
+  <label class="flast" for="">Last Name</label>
+  <input type="text" class="remove-border" id="last-name">
+  <label class="femail" for="">Email</label>
+  <input type="email" name="email" class="remove-border" id="email">
+  <label class="fphone" for="">Phone Number</label>
+  <input type="text" class="remove-border" id="phone-number">
+  <label class="fmessage" for="">Message</label>
+  <input type="text" class="remove-border" id="message" placeholder="Write your message">
+  <input type="hidden" name="_next" value="http://localhost:5000/aftercontact.html">
+  <input type="hidden" name="_subject" value="A new message from customer of DOUGHPOPSHOP!">
+  <button class="send btn">Send</button>
+</form>
+
+<script>
+  const firstName = document.querySelector("#first-name");
+  const lastName = document.querySelector("#last-name");
+  const email = document.querySelector("#email");
+  const phone = document.querySelector("#phone-number");
+  const message = document.querySelector("#message");
+  const send = document.querySelector(".send");
+  const afterContact = document.querySelector(".after-contact");
+  const contactForm = document.querySelector("#contact-form");
+
+  document.getElementById('myForm').addEventListener('submit', async function (e) {
+    e.preventDefault(); // Stop default form submission
+
+    const form = e.target;
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    // ✅ 1. Send to your backend
+    await fetch('/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        firstName: firstName.value,
+        lastName: lastName.value,
+        email: email.value,
+        phone: phone.value,
+        message: message.value
+      }),
+    });
+
+    // ✅ 2. Dynamically create and submit to FormSubmit
+    const tempForm = document.createElement('form');
+    tempForm.action = 'https://formsubmit.co/thi.vu@dci-student.org';
+    tempForm.method = 'POST';
+
+    for (const [key, value] of formData.entries()) {
+      const input = document.createElement('input');
+      input.type = 'hidden';
+      input.name = key;
+      input.value = value;
+      tempForm.appendChild(input);
+    }
+
+    document.body.appendChild(tempForm);
+    tempForm.submit();
+  });
+</script>
