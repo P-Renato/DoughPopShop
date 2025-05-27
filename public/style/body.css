@@ -45,17 +45,25 @@
     margin: 0;
     padding: 0;
     display: block;
-    z-index: 3;
+    z-index: 10;
+    position: relative;
 }
 
-
+.roundedText{
+    position: absolute;
+    left: 50rem;
+    width: 44rem;
+    height: 33rem;
+    top: 8rem;
+    padding: 3rem;
+    border: 1px solid aliceblue;
+    z-index: 1000;
+}
 
 .bgtext{
-    width: 100vw;
-    height: 100%;
     position: absolute;
     z-index: 0;
-    /* border: 2px solid black; */
+    border: 2px solid black;
     padding: 0;
     margin: 0;
     display: flex;
@@ -66,24 +74,26 @@
 .bgtext p{
     margin: 0;
     top: 0;
-    font-size: 7rem;
+    font-size: 9.5rem;
 }
 
 
 
 .popBgText{
     font-family: var(--modakFontStyle);
-    width: 100vw;
-    font-size: 4.7rem;
+    min-width: 100vw;
+    font-size: 18rem;
     opacity: .25;
-    line-height: 80%;
+    line-height: 8rem;
     text-align: center;
     white-space: nowrap;
     transform-origin: center center;
     margin: 0;
     transform: translateY(-82%);
     z-index: 0;
-
+    letter-spacing: .5rem;
+    /* text-shadow: 2px 12px 4px rgba(83, 77, 77, 0.5); */
+    text-shadow: 3px 6px 0 #8f8787;
 }
 
 .popBgText1 {
@@ -117,34 +127,34 @@
 /* OVERGROUND */
 
 .layoutOverAll{
-    display: grid;
-    grid-template-columns: .5fr 5fr 1fr;
-    grid-template-rows: .3fr 1fr 1fr .5fr ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 
 /* Parent container */
 .sideInfo{
-    grid-row: 2 / 4;
-    grid-column: 1 / 2;
     display: flex;
-    width: 25rem;
+    width: 100rem;
     margin-left: 4rem;
     padding: 1rem;
-    height: 100%;
+    height: 45rem;
     background-color: white;
     z-index: 3;
-    position: relative;
+    /* position: relative; */
     border-radius: 32px;
-    top: 6rem;
+    
 }
 
 .sideInfo span{
     display: block;
+    font-size: 2rem;
     font-family: var(--fredocaFontStyle);
 }
 
 .sideBarText{
-    grid-row: 2 / 4;
+
 }
 
 .sideBarHeader,
@@ -152,62 +162,60 @@
     font-family: var(--modakFontStyle);
     color: var(--pinkColor);
     font-weight: normal;
+    font-size: 3rem;
 }
 
 /* Parent container */
 
 .donutFlavour{
     /* border: 2px solid salmon; */
-    grid-row: 2 / 4;
-    grid-column: 3 / 4;
+
     width: 100%;
     z-index: 1;
-    position: relative;
-    right: 13rem;
+    /* position: relative; */
+    right: -8rem;
     top: 9rem;
     
-
-    img{
-        width: 18rem;
-        height: 30rem;
-    }
+}
+.donutFlavour img{
+    width: 32rem;
+    height: 40rem;
 }
 
 
 /* Parent container */
 .donutAndBag {
-    grid-row: 1 / 4;
-    grid-column: 2 / 3;
+ 
     position: relative;
     height: 38rem;
     /* border: 1px solid yellowgreen; */
-    width: 60%;
+    width: 100%;
     
   }
 
   /* Bag (bottom) */
   .bagForDonutUnder img {
-    width: 30rem;
-    height: 28rem;
+    width: 44rem;
+    height: 30rem;
   }
   .bagForDonutUnder {
     position: absolute;
     bottom: 0;
-    left: 33%;
+    left: 30%;
     margin: 0 auto;
-    transform: translateY(64%);
+    transform: translateY(25%);
     z-index: 6;
   }
 
   /* Donut in middle */
   .donutInBag img {
-    width: 29rem;
+    width: 44rem;
   }
   .donutInBag {
     position: absolute;
-    bottom: -7rem; /* Adjust to raise/lower */
-    left: 50%;
-    transform: translateX(-14%);
+    bottom: -1rem; /* Adjust to raise/lower */
+    left: 42%;
+    transform: translateX(-12%);
     z-index: 8;
   }
 
@@ -215,13 +223,13 @@
   .bagForDonutTop {
     position: absolute;
     bottom: 0;
-    left: 32%;
-    transform: translateY(73%);
+    left: 30%;
+    transform: translateY(37%);
     z-index: 10;
   }
 
   .bagForDonutTop img {
-    width: 34rem;
-    height: 26rem;
+    width: 44rem;
+    height: 30rem;
   }
 
