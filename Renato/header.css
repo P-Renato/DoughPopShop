@@ -19,12 +19,12 @@
 
 /* HEADER */
 .custom-header {
-    height: 8rem;
+    height: 10rem;
     width: 100%;
     display: flex;
     justify-content: center; 
     align-items: center;
-
+    background-color: white;
 }
 
 
@@ -40,7 +40,7 @@
 }
 
   .doughPopLogo img{
-    width: 20rem;
+    width: 25rem;
     margin: 0;
 
 }
@@ -68,6 +68,7 @@
     float: right;
  
     a{
+        font-size: 1.6rem;
         margin: .4rem;
         text-decoration: none;
         color: #444444;
@@ -79,6 +80,7 @@
     grid-area: locationContact;
     float: left;
     a{
+        font-size: 1.6rem;
         margin: .4rem;
         text-decoration: none;
         color: #444444;
