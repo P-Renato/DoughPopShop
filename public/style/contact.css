@@ -1,0 +1,140 @@
+body {
+    background-color: #D57178;
+    text-align: center;
+    color: white;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.after-contact {
+    margin: 5em auto;
+   
+}
+
+.btn {
+    background-color: white;
+    min-width: 180px;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: .5em;
+    cursor: pointer;
+}
+
+.contact-form {
+    display: grid;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    gap: 2em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "ffirstname flastname"
+        "firstname lastname"
+        "femail fphone"
+        "email phone"
+        "fmessage fmessage"
+        "message message";
+    margin: 3vw 10vw;
+    color: white;
+}
+
+.fname {
+    grid-area: ffirstname;
+    text-align: left;
+    margin-top: 1em;
+}
+
+.flast {
+    grid-area: flastname;
+    text-align: left;
+    margin-top: 1em;
+}
+
+.femail {
+    grid-area: femail;
+    text-align: left;
+    margin-top: 1em;
+}
+
+.fphone {
+    grid-area: fphone;
+    text-align: left;
+    margin-top: 1em;
+}
+
+.fmessage {
+    grid-area: fmessage;
+    text-align: left;
+    margin-top: 1em;
+}
+
+.send {
+    grid-area: send;
+}
+
+
+
+#first-name {
+    grid-area: firstname;
+    color: white;
+}
+
+#last-name {
+    grid-area: lastname;
+    color: white;
+}
+
+#email {
+    grid-area: email;
+    color: white;
+}
+
+#phone-number {
+    grid-area: phone;
+    color: white;
+}
+
+#message {
+    grid-area: message;
+    color: white;
+}
+
+.remove-border {
+    background-color: #D57178;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid whitesmoke;
+    padding: .5em;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: white;
+}
+
+.send {
+    cursor: pointer;
+    margin: 2em;
+}
+
+.header-img {
+    margin: -.5em 0 0 -1em;
+}
+
+.social-contact {
+    margin: 2em;
+}
+
+.social-icon {
+    width: 25px;
+}
+
+.contact-introduce {
+    font-family: "Modak", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+}

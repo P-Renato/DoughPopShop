@@ -1,0 +1,27 @@
+{
+  "name": "doughpopshop",
+  "version": "1.0.0",
+  "description": "## 💛 Team Roles",
+  "main": "contact.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/P-Renato/DoughPopShop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/P-Renato/DoughPopShop/issues"
+  },
+  "homepage": "https://github.com/P-Renato/DoughPopShop#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.5",
+    "@types/express": "^5.0.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "nodemailer": "^7.0.3"
+  }
+}

@@ -19,7 +19,7 @@
 
 /* HEADER */
 .custom-header {
-    height: 10rem;
+    height: 12rem;
     width: 100%;
     display: flex;
     justify-content: center; 
@@ -37,6 +37,7 @@
     margin-bottom: .8rem;
     grid-area: popLogo;
     padding: 0;
+    margin: 0 auto;
 }
 
   .doughPopLogo img{
@@ -58,7 +59,7 @@
     display: flex;
     flex-direction: row;
     align-items: end;
-    font-size: 1rem;
+    font-size: 2rem;
     /* border: 2px solid black; */
     margin-bottom: 1.5rem;
     
@@ -67,25 +68,27 @@
     grid-area: menuAbout;
     float: right;
  
-    a{
-        font-size: 1.6rem;
-        margin: .4rem;
-        text-decoration: none;
-        color: #444444;
-    }
+   
 }
-
+.menuAbout  a{
+    font-size: 1.6rem;
+    margin: .4rem;
+    text-decoration: none;
+    color: #444444;
+}
 
 .locationContact{
     grid-area: locationContact;
     float: left;
-    a{
-        font-size: 1.6rem;
-        margin: .4rem;
-        text-decoration: none;
-        color: #444444;
-    }
 }
+.locationContact a {
+    font-size: 1.6rem;
+    margin: .4rem;
+    text-decoration: none;
+    color: #444444;
+}
+
+
 
 
 

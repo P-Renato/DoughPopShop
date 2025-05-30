@@ -1,0 +1,39 @@
+[33mdaf33d2[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: pull --tags origin main: Fast-forward
+[33mbc6fe5e[m HEAD@{1}: checkout: moving from renato to main
+[33m5eb6bbf[m[33m ([m[1;31morigin/renato[m[33m, [m[1;32mrenato[m[33m)[m HEAD@{2}: commit: updates 27.05
+[33mbc6fe5e[m HEAD@{3}: checkout: moving from main to renato
+[33mbc6fe5e[m HEAD@{4}: pull: Fast-forward
+[33ma37d041[m HEAD@{5}: checkout: moving from renato to main
+[33mbc6fe5e[m HEAD@{6}: pull origin main: Fast-forward
+[33ma37d041[m HEAD@{7}: checkout: moving from renato to renato
+[33ma37d041[m HEAD@{8}: merge main: Fast-forward
+[33mf450443[m HEAD@{9}: checkout: moving from main to renato
+[33ma37d041[m HEAD@{10}: pull: Fast-forward
+[33mf450443[m HEAD@{11}: merge renato: Fast-forward
+[33mc8fb9af[m HEAD@{12}: checkout: moving from renato to main
+[33mf450443[m HEAD@{13}: commit: updates
+[33m29be5bc[m HEAD@{14}: commit: Sunday updates
+[33m7b06363[m HEAD@{15}: commit: body updates saturday
+[33m7ddee95[m HEAD@{16}: pull --rebase (finish): returning to refs/heads/renato
+[33m7ddee95[m HEAD@{17}: pull --rebase (pick): renato update
+[33mc0958e7[m HEAD@{18}: pull --rebase (pick): images
+[33m11c05d5[m HEAD@{19}: pull --rebase (start): checkout 11c05d5448bfe35b564346ace586f45408c732a1
+[33mf212b04[m HEAD@{20}: commit: renato update
+[33m6b86332[m HEAD@{21}: commit: images
+[33m1d59245[m HEAD@{22}: reset: moving to HEAD~1
+[33m11c05d5[m HEAD@{23}: checkout: moving from renato to renato
+[33m11c05d5[m HEAD@{24}: merge origin: Merge made by the 'ort' strategy.
+[33m1d59245[m HEAD@{25}: commit: update renato
+[33m163dc33[m HEAD@{26}: commit: renato updates
+[33m5a0c829[m HEAD@{27}: reset: moving to HEAD~1
+[33m15e785f[m HEAD@{28}: merge origin/xuyen: Merge made by the 'ort' strategy.
+[33m5a0c829[m HEAD@{29}: commit: renato update
+[33m54eedab[m HEAD@{30}: commit: renato updates
+[33m62f41a7[m HEAD@{31}: merge origin/main: Fast-forward
+[33mba1575c[m HEAD@{32}: commit: last updates
+[33m4afabc7[m HEAD@{33}: commit: image
+[33mf85508b[m HEAD@{34}: commit: renato's updates
+[33m91c9549[m HEAD@{35}: checkout: moving from renato to renato
+[33m91c9549[m HEAD@{36}: commit: renato update header
+[33mc8fb9af[m HEAD@{37}: checkout: moving from main to renato
+[33mc8fb9af[m HEAD@{38}: clone: from github.com:P-Renato/DoughPopShop.git
