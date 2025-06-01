@@ -1,0 +1,90 @@
+
+
+:root {
+    --fredocaFontStyle: "Fredoka", sans-serif;
+    --modakFontStyle: "Modak", system-ui;
+    --pinkColor: #D57178;
+    --beigeColor: #F5E6D0;
+    --lightGreenColor: #B5BAA4;
+    --goldenYellowColor: #F1C173;
+    --darkColor1: #532610;
+    --darkColor2: #55301E;
+    --veryLightGreenColor: #DBE8E3;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+.custom-header {
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: white;
+}
+
+
+.doughPopLogo {
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: .8rem;
+    grid-area: popLogo;
+    padding: 0;
+}
+
+  .doughPopLogo img{
+    width: 25rem;
+    margin: 0;
+
+}
+.navBarOptions{ 
+    width: 100%;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1.3fr .5fr .5fr .5fr 1.3fr;
+    grid-template-areas: '. menuAbout popLogo locationContact .';
+}
+
+.menuAbout,
+.locationContact{
+    font-family: var(--fredocaFontStyle);
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    font-size: 1rem;
+    /* border: 2px solid black; */
+    margin-bottom: 1.5rem;
+    
+}
+.menuAbout{
+    grid-area: menuAbout;
+    float: right;
+ 
+    a{
+        font-size: 1.6rem;
+        margin: .4rem;
+        text-decoration: none;
+        color: #444444;
+    }
+}
+
+
+.locationContact{
+    grid-area: locationContact;
+    float: left;
+    a{
+        font-size: 1.6rem;
+        margin: .4rem;
+        text-decoration: none;
+        color: #444444;
+    }
+}

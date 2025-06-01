@@ -1,3 +1,4 @@
+
 :root {
     --fredocaFontStyle: "Fredoka", sans-serif;
     --modakFontStyle: "Modak", system-ui;
@@ -192,7 +193,7 @@
 
   /* Bag (bottom) */
   .bagForDonutUnder img {
-    width: 43rem;
+    width: 36rem;
     height: 38rem;
   }
   .bagForDonutUnder {
@@ -206,13 +207,13 @@
 
   /* Donut in middle */
   .donutInBag img {
-    width: 42rem;
+    width: 34.5rem;
   }
   .donutInBag {
     position: absolute;
     bottom: -7rem; /* Adjust to raise/lower */
     left: 50%;
-    transform: translateX(-14%);
+    transform: translateX(-12%);
     z-index: 8;
   }
 
@@ -220,16 +221,39 @@
   .bagForDonutTop {
     position: absolute;
     bottom: 0;
-    left: 32%;
-    transform: translateY(73%);
+    left: 34%;
+    transform: translateY(70%);
     z-index: 10;
-    border: 2px solid white;
-    background-color: red;
   }
 
   .bagForDonutTop img {
-    width: 44rem;
-    height: 38rem;
+    width: 35.5rem;
+    height: 30rem;
   }
 
+.donutWithArcText {
+    position: relative;
+    width: 32rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 38rem;
+}
 
+.donutArcText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32rem;
+    height: 220px;
+    z-index: 9;
+    pointer-events: none;
+}
+
+.donutWithArcText .donut-image {
+    width: 32rem;
+    margin-top: 30px; /* Adjust so text sits above the donut nicely */
+    position: relative;
+    z-index: 8;
+}
