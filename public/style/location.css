@@ -1,0 +1,41 @@
+.location-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    font-family: 'Fredoka', sans-serif;
+    
+}
+
+.location-header {
+   position: absolute;
+   z-index: 2;
+   margin-left: -50vw;
+}
+
+.location-img {
+    margin-top: 2.5em;
+}
+
+.location-img img {
+    width: 50vw;
+    height: 47em;
+}
+
+.location-text {
+    background-color: #55301E;
+    color: white;
+    padding: 8em 2em 2em 2em;
+    text-align: center;
+    h1 {
+        font-family: "Modak", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2.5em;
+    }
+}
+
+#map {
+    margin: 4em auto;
+}

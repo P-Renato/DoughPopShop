@@ -1,6 +1,8 @@
 import express , {Express, Request, Response, NextFunction} from "express";
 import fs from "fs";
 import cors from 'cors';
+import {Contact} from "./types.ts"
+import {readDB, writeDB} from "./db.ts"
 
 const app: Express = express();
 app.use(cors());
@@ -9,17 +11,9 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.static("public"));
 
-type Contact= {
-    id: number,
-    firstName: string,
-    lastName: string,
-    email: string,
-    phone: string,
-    message: string
-}
 
 app.get("/contact", (req: Request,res: Response) => {
-    const customerMessage = JSON.parse(fs.readFileSync("messages.json", "utf-8"));
+    const customerMessage = JSON.parse(readDB("messages.json"));
     res.json(customerMessage);
     console.log(customerMessage)
 })
@@ -29,7 +23,7 @@ app.post("/contact", (req: Request, res: Response) => {
     const list = JSON.parse(fs.readFileSync("messages.json","utf-8"));
     const newMessage: Contact = {id: list.length+1, firstName, lastName, email, phone, message };
     list.push(newMessage);
-    fs.writeFileSync("messages.json", JSON.stringify(list), "utf-8");
+    writeDB("messages.json", list);
     res.json({message: "added successfully !"})
 })
 

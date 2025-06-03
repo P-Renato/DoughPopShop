@@ -3,29 +3,29 @@
 
 /* Global Variables */
 :root {
-    --primary-color: #D57178;        
-    --secondary-color: #fbe7dd;      
-    --accent-color: #fcbf49;         
-    --text-color: #444444;      
-    --text-color-2: #fff;     
-    --macha-color: #B5BAA4;
-    --choco-color: #55301E;
-    --suger-color: #EFB970;
-    --cookie-color: #4C2307;
-    --blueberry-color: #2C9EBC;
-    --blueberry-background-color:#DBE8E3;
-    --lemon-color: #E48E16;
-    --lemon-background-color: #F0CD35;
-    --apricot-jam-color: #C37E23;
-    --apricot-jam-background-color: #F1C173;
-    --Snickers-color: #532610;
-    --Snickers-background-color: #B5BAA4;
-    --font-family: 'Fredoka', sans-serif;
-    --border-radius: 30px;
-  }
-  
-  /*  Reset & Base Styles */
-  /* * {
+  --primary-color: #D57178;
+  --secondary-color: #fbe7dd;
+  --accent-color: #fcbf49;
+  --text-color: #444444;
+  --text-color-2: #fff;
+  --macha-color: #B5BAA4;
+  --choco-color: #55301E;
+  --suger-color: #EFB970;
+  --cookie-color: #4C2307;
+  --blueberry-color: #2C9EBC;
+  --blueberry-background-color: #DBE8E3;
+  --lemon-color: #E48E16;
+  --lemon-background-color: #F0CD35;
+  --apricot-jam-color: #C37E23;
+  --apricot-jam-background-color: #F1C173;
+  --Snickers-color: #532610;
+  --Snickers-background-color: #B5BAA4;
+  --font-family: 'Fredoka', sans-serif;
+  --border-radius: 30px;
+}
+
+/*  Reset & Base Styles */
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -39,7 +39,7 @@
     font-size: 24px;
   } */
 
-  /* a {
+/* a {
     text-decoration: none;
     color: inherit;
   }
@@ -53,7 +53,7 @@
   
   
   /* 3. Reusable Utility Classes */
-  /* .text-center {
+/* .text-center {
     text-align: center;
   }
   
@@ -73,7 +73,7 @@
   
   
   /* Section titles(Each part has a different color) */
-  /* .h1 {
+/* .h1 {
    font-family: 'Modak', sans-serif;
    font-size: 64px;
    font-style: normal;
@@ -104,61 +104,82 @@
   font-style: normal;
   font-weight: 500;
   line-height: 20px; 
-  } */ */ */
+  } */
+*/ */ body {
+  margin: 0;
+  font-family: var(--fredocaFontStyle);
+  background: #fff8e1;
+}
 
- body {
-      margin: 0;
-       font-family: var(--fredocaFontStyle);
-      background: #fff8e1;
-    }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  color: black;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 0;
-    }
-    .grid  h2 {
-      grid-column: span 2;
-      text-align: center;
-      font-size: 2.5em;
-      font-style: bold;
-      font-family:var(--font-family) ;
-     
-     
-    }
+.grid h2 {
+  grid-column: span 2;
+  font-size: 1.7em;
+  font-family: "Modak", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 
-    .Card {
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      background: #f0f0f0;
-      min-height: 200px;
-    }
+.grid p {
+  text-align: left;
+}
 
-    .cardM img {
-      width: 100px;
-      margin-right: 20px;
-    }
+.card {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  background: #f0f0f0;
+  min-height: 200px;
+  gap: 2em
+}
 
-    .blueberry { background-color: #d7f3f9; 
-    h2{
-      color: var(--blueberry-color);
-    }}
-    .lemon { background-color: #fce76f;
-     h2{
-      color: var(--lemon-color);
-    } }
-    .apricot { background-color: #f8d59f; 
-     h2{
-      color: var(--apricot-jam-color);
-    }}
-    .snickers { background-color: #c4b9aa;  h2{
-      color: var(--cookie-color);
-    }}
+.cardM img {
+  width: 100px;
+  margin-right: 20px;
+}
 
-    .card h2 {
-      margin: 0 0 10px 0;
-    }
+.blueberry {
+  background-color: #d7f3f9;
+
+  h2 {
+    color: var(--blueberry-color);
+  }
+}
+
+.lemon {
+  background-color: #fce76f;
+
+  h2 {
+    color: var(--lemon-color);
+  }
+}
+
+.apricot {
+  background-color: #f8d59f;
+
+  h2 {
+    color: var(--apricot-jam-color);
+  }
+}
+
+.snickers {
+  background-color: #c4b9aa;
+
+  h2 {
+    color: var(--cookie-color);
+  }
+}
+
+.card h2 {
+  margin: 0 0 10px 0;
+}
+
 .about-section {
   background-color: var(--primary-color);
   padding: 60px 30px;
@@ -167,12 +188,11 @@
 
 .about-container {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 50px;
-  max-width: 1000px;
+  gap: 2em;
+  padding: 1em;
   margin: 0 auto;
-  flex-wrap: wrap;
+
 }
 
 .about-images {
@@ -180,40 +200,62 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .about-images img {
   width: 240px;
   height: 240px;
   object-fit: cover;
-  
- 
+}
+
+.second-img {
+  margin-left: 5em;
 }
 
 .about-text {
-  max-width: 500px;
+  margin-top: 2em;
+  text-align: left;
 }
 
 .about-text h2 {
-  font-size: 2em;
+  font-family: "Modak", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5em;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .about-text p {
-  font-size: 2em;
+  font-size: 1em;
   margin: 10px 0;
 }
 
 .about-text blockquote {
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-weight: bold;
   margin: 30px 0;
 }
+
 .blockquote {
   font-size: 3.3em;
   font-style: italic;
   color: var(--text-color-2);
   border-left: 4px solid var(--primary-color);
   padding-left: 20px;
+}
+
+.about-header {
+  background-color: #F5E6D0;
+  h1 {
+    color: black;
+    position: absolute;
+    left: 45%;
+    margin-top: .3em;
+    font-family: "Modak", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4em;
+  }
 }
