@@ -1,4 +1,3 @@
-
 :root {
     --fredocaFontStyle: "Fredoka", sans-serif;
     --modakFontStyle: "Modak", system-ui;
@@ -12,7 +11,7 @@
 }
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,7 +20,7 @@
 
 
 /* HEADER  */
-.mainBody{
+.mainBody {
     background-color: var(--beigeColor);
     position: relative;
     z-index: 0;
@@ -31,19 +30,19 @@
 }
 
 
-.meltingSauce{
+.meltingSauce {
     color: white;
     margin: 0;
     width: 100%;
     height: 100%;
-    z-index: 3;  
+    z-index: 3;
     position: relative;
 }
 
 
 
 /* BACKGROUND */
-.svg-container{
+.svg-container {
     width: 120%;
     margin: 0;
     padding: 0;
@@ -53,7 +52,7 @@
 
 
 
-.bgtext{
+.bgtext {
     width: 100vw;
     height: 100%;
     position: absolute;
@@ -68,7 +67,7 @@
     text-shadow: 2px 12px 4px rgba(83, 79, 79, 0.5);
 }
 
-.bgtext p{
+.bgtext p {
     margin: 1rem 0;
     top: 0;
     font-size: 7rem;
@@ -76,7 +75,7 @@
 
 
 
-.popBgText{
+.popBgText {
     font-family: var(--modakFontStyle);
     width: 100vw;
     font-size: 4.7rem;
@@ -90,7 +89,7 @@
     z-index: 0;
     letter-spacing: 0.2rem;
     scale: 1.3;
-    
+
 }
 
 .popBgText1 {
@@ -98,33 +97,33 @@
     color: var(--pinkColor);
 }
 
-.popBgText2{
+.popBgText2 {
     color: var(--lightGreenColor);
 }
 
-.popBgText3{
-    color: var(--goldenYellowColor);   
-}
-
-.popBgText4{
-    color: var(--darkColor2);
-}
-
-.popBgText5{
+.popBgText3 {
     color: var(--goldenYellowColor);
 }
 
-.popBgText6{
+.popBgText4 {
+    color: var(--darkColor2);
+}
+
+.popBgText5 {
+    color: var(--goldenYellowColor);
+}
+
+.popBgText6 {
     color: var(--lightGreenColor);
 }
 
-.popBgText7{
+.popBgText7 {
     color: var(--pinkColor);
 }
 
 /* OVERGROUND */
 
-.layoutOverAll{
+.layoutOverAll {
     width: 100%;
     min-height: 100%;
     /* background-color: wheat; */
@@ -134,7 +133,7 @@
 }
 
 /* Parent container */
-.sideInfo{
+.sideInfo {
 
     display: flex;
     width: 85rem;
@@ -148,37 +147,53 @@
     top: 6rem;
 }
 
-.sideInfo span{
+.sideInfo span {
     display: block;
     font-family: var(--fredocaFontStyle);
     font-size: 2rem;
 }
 
 .sideBarHeader,
-.sideBarPrice{
+.sideBarPrice {
     font-family: var(--modakFontStyle);
     color: var(--pinkColor);
     font-weight: normal;
     font-size: 4rem;
+
+}
+
+.sideBarText {
+    color: black;
 }
 
 /* Parent container */
 
-.donutFlavour{
+.donutFlavour {
     /* border: 2px solid salmon; */
     width: 100%;
     z-index: 1;
     position: relative;
-    left: 10rem;
-    top: 10rem;
-    
+    right: 13rem;
+    top: 9rem;
+    animation: fly 10s infinite;
 
-    img{
+    img {
         width: 28rem;
         height: 30rem;
     }
 }
 
+@keyframes fly {
+    from {
+        top: 12em;
+        left: -5em;
+    }
+
+    to {
+        top: -76em;
+        left: 40em;
+    }
+}
 
 /* Parent container */
 .donutAndBag {
@@ -188,48 +203,79 @@
     height: 28rem;
     /* border: 1px solid yellowgreen; */
     width: 60%;
-    
-  }
 
-  /* Bag (bottom) */
-  .bagForDonutUnder img {
+}
+
+/* Bag (bottom) */
+.bagForDonutUnder img {
     width: 36rem;
     height: 38rem;
-  }
-  .bagForDonutUnder {
+}
+
+.bagForDonutUnder {
     position: absolute;
     bottom: 0;
     left: 33%;
     margin: 0 auto;
     transform: translateY(64%);
     z-index: 6;
-  }
+}
 
-  /* Donut in middle */
-  .donutInBag img {
+/* Donut in middle */
+.donutInBag img {
     width: 34.5rem;
-  }
-  .donutInBag {
+}
+
+.donutInBag {
     position: absolute;
-    bottom: -7rem; /* Adjust to raise/lower */
+    bottom: -7rem;
+    /* Adjust to raise/lower */
     left: 50%;
     transform: translateX(-12%);
     z-index: 8;
-  }
+}
 
-  /* Bag handle (top) */
-  .bagForDonutTop {
+/* animation */
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#center-image {
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.word {
+    position: absolute;
+    font-size: 18px;
+    font-family: sans-serif;
+    white-space: nowrap;
+    color: black;
+    z-index: 2;
+}
+
+/* Bag handle (top) */
+.bagForDonutTop {
     position: absolute;
     bottom: 0;
     left: 34%;
     transform: translateY(70%);
     z-index: 10;
-  }
+}
 
-  .bagForDonutTop img {
+.bagForDonutTop img {
     width: 35.5rem;
     height: 30rem;
-  }
+}
 
 .donutWithArcText {
     position: relative;
@@ -244,7 +290,7 @@
 .donutArcText {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 12em;
     width: 32rem;
     height: 220px;
     z-index: 9;
@@ -253,7 +299,24 @@
 
 .donutWithArcText .donut-image {
     width: 32rem;
-    margin-top: 30px; /* Adjust so text sits above the donut nicely */
+    margin-top: 30px auto;
+    /* Adjust so text sits above the donut nicely */
     position: relative;
     z-index: 8;
+    left: 12.5em;
+    animation: spin 12s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.word {
+    cursor: pointer;
 }
